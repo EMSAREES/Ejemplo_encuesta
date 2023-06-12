@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title> Formulario </title>-->
+<link rel="stylesheet" href="/CSS/certificado_1.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="title">TE GUSTA LA ANIMACION"</h1>
+
+  
+    <p id="description">Gracias por tomarte el tiempo para conestar esta encuesta</p>
+  </header>
+  
+  <div class="cosa"> 
+
+    <form id="survey-form">
+    
+    </fieldset>
+    <fieldset>
+      
+    <label id="name-label">Nombre: <input type="text" id="name" placeholder="Ingresa tu nombre" required></label>
+    <label id="email-label">Email: <input type="email" id="email" placeholder="Ingresa tu correo"required></label>
+    <label id="number-label"> Edad <spam >(Opcional)</spam>: <input type="number"  id="number" min="10" max="100"  placeholder="Edad"></label>
+    <label for="dropdown"> Genero:
+    <select id="dropdown">
+      <option value="">(seleccione una opción)</option>
+      <option value="1">Hombre</option>
+      <option value="2">Mujer</option>
+      <option value="3">Elefante Guerrero Psíquico Ancestral</option>
+    <select>
+    </label>
+   
+  </fieldset>
+  <fieldset>
+    
+    <p>¿Qué tipo de animación te gusta?</p>
+    <label><input type="radio" name="animation-type" class="inline" value="3D">Animación 3D</label>
+    <label><input type="radio" name="animation-type" class="inline" value="2D">Animación 2D</label>
+    <label><input type="radio" name="animation-type" class="inline" value="stop-motion">Animación stop-motion</label>
+    <label><input type="radio" name="animation-type" class="inline" value="tradicional">Animation tradicional <spam "clue">(o Animación sobre Acetato)<spam> </label>
+    <label><input type="radio" name="animation-type" class="inline" value="marionetas">Animación de marionetas</label>
+    
+  </fieldset>
+  <fieldset>
+   
+      <p>¿Por qué te gusta este tipo de animación?</p>
+      <label><input name="prefer" value="La calidad visual" type="checkbox" class="inline" />La calidad visual</label>
+      <label><input name="prefer" value="La_historia_y_los_personajes" type="checkbox"class="inline" />La historia y los personajes</label>
+      <label><input name="prefer" value="El_estilo_artístico" type="checkbox"class="inline" />El estilo artístico</label>
+      <label><input name="prefer" value="Los_efectos_de_sonido" type="checkbox"class="inline" /> Los efectos de sonido</label>
+      <label><input name="prefer" value="La_originalidad_y_la_innovación" type="checkbox"class="inline" />La originalidad y la innovación</label>
+   
+    </fieldset>
+    <fieldset>
+    
+      <p>¿Algún sugerencia de un tipo de animación que te guste?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Escribe aquí tu comentario...">    </textarea>
+    
+
+    <div class="form-group">
+      <input type="submit" value="Guardar" />
+    </div>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

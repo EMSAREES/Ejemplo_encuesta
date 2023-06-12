@@ -1,0 +1,114 @@
+/* Estilos para alinear y centrar los botones de radio y casillas de verificación */
+.botones {
+  margin-bottom: 10px; /* Margen inferior de 10 píxeles */
+}
+
+.botones label {
+  display: flex; /* Utiliza el modelo de caja flexible para alinear elementos hijos en una línea */
+  align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+.botones input[type="radio"],
+.botones input[type="checkbox"] {
+  margin-right: 5px; /* Margen derecho de 5 píxeles */
+}
+
+/* Estilos para el formulario */
+body {
+  background-image: url("https://www.notodoanimacion.es/wp-content/uploads/2019/01/que-es-la-animaci%C3%B3n-3d-tipos-y-t%C3%A9cnicas.jpg"); /* Imagen de fondo */
+  background-color: transparent; /* Color de fondo transparente */
+  color: #f5f6f7; /* Color de texto blanco */
+  margin: 0; /* Elimina el margen exterior */
+  width: 100%; /* Ancho del cuerpo al 100% del viewport */
+  height: 100vh; /* Altura del cuerpo al 100% de la altura del viewport */
+  font-family: Tahoma; /* Fuente utilizada para el texto */
+  font-size: 16px; /* Tamaño de fuente del texto */
+}
+
+body::before {
+  content: ""; /* Contenido vacío para el pseudo-elemento */
+  position: absolute; /* Posición absoluta */
+  top: 0; left: 0; right: 0; bottom: 0; /* Bordes que ocupan todo el cuerpo */
+  background-color: rgba(27, 27, 50, 0.5); /* Color de fondo semi-transparente */
+  z-index: -1; /* Índice de apilamiento detrás del contenido principal */
+}
+
+h1, p {
+  margin: 1em auto; /* Margen superior e inferior de 1em y margen izquierdo y derecho automáticos */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+p {
+  font-size: large; /* Tamaño de fuente grande */
+}
+
+form {
+  width: 60vw; /* Ancho del formulario al 60% del viewport */
+  max-width: 500px; /* Ancho máximo del formulario */
+  min-width: 300px; /* Ancho mínimo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  padding-bottom: 2em; /* Espaciado inferior de 2em */
+}
+
+label {
+  display: block; /* Muestra las etiquetas como bloques */
+  margin: 0.5rem 0; /* Margen superior e inferior de 0.5rem y margen izquierdo y derecho de 0 */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0; /* Margen superior de 10px y margen inferior, izquierdo y derecho de 0 */
+  width: 100%; /* Ancho completo */
+  min-height: 2em; /* Altura mínima de 2em */
+}
+
+input, textarea, select {
+  background-color: #0f014d; /* Color de fondo */
+  border: 1px solid #0004ff; /* Borde de 1px sólido */
+  color: #ffffff; /* Color de texto */
+}
+
+.inline {
+  width: unset; /* Ancho sin establecer */
+  margin: 0 0.5em 0 0; /* Margen derecho de 0.5em y margen izquierdo y superior e inferior de 0 */
+  vertical-align: middle; /* Alinea verticalmente al centro */
+}
+
+input[type="submit"] {
+  display: block; /* Muestra como bloque */
+  width: 60%; /* Ancho del 60% */
+  margin: 1em auto; /* Margen superior e inferior de 1em y margen izquierdo y derecho automáticos */
+  height: 2em; /* Altura de 2em */
+  font-size: 1.1rem; /* Tamaño de fuente de 1.1rem */
+  background-color: #3b3b4f; /* Color de fondo */
+  border-color: white; /* Color del borde */
+  min-width: 300px; /* Ancho mínimo de 300px */
+}
+
+input[type="file"] {
+  padding: 1px 2px; /* Relleno de 1px arriba y abajo y 2px izquierda y derecha */
+}
+
+a {
+  color: #dfdfe2; /* Color de enlace */
+}
+
+.cosa {
+  background-color: rgba(45, 40, 70, 0.5); /* Color de fondo semi-transparente */
+  width: 70vw; /* Ancho de 70% del viewport */
+  max-width: 550px; /* Ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-height: 1230px; /* Altura máxima */
+}
+
+fieldset {
+  border: none; /* Sin borde */
+  padding: 2rem 0; /* Relleno superior e inferior de 2rem y margen izquierdo y derecho de 0 */
+  border-bottom: 3px solid #6a6572; /* Borde inferior de 3px sólido */
+}
+
+fieldset:last-of-type {
+  border-bottom: none; /* Sin borde inferior para el último fieldset */
+}
